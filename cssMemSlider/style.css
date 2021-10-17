@@ -53,6 +53,10 @@
 
 }
 
+.picture.active {
+  order: -1;
+}
+
 .picture img {
   width: 70rem;
   height: 40rem;
@@ -119,76 +123,101 @@
   justify-content: space-between;
 }
 
+/* cursor effect */
+
+.cursor-effect {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: chartreuse;
+  opacity: 30%;
+  position: relative;
+  /* display: none; */
+
+  ;
+}
+
+.cursor-effect.active {
+  display: block;
+}
+
+
+
 @media (max-width: 320px) {
   .wriper {
     width: 19rem;
   }
-}
 
-.header {
-  height: 4rem;
-}
+  .header {
+    height: 4rem;
+  }
 
-.header-titele {
-  font-size: 1.5rem;
-}
+  .header-titele {
+    font-size: 1.5rem;
+  }
 
-.header-box img {
-  width: 3rem;
-  height: 3rem;
-}
+  .header-box img {
+    width: 3rem;
+    height: 3rem;
+  }
 
-/* main 320px */
+  /* main 320px */
 
-.main {
-  padding-top: 1rem;
-}
+  .main {
+    padding-top: 1rem;
+  }
 
-.slider {
-  width: 19rem;
-  height: 11rem;
-  border-radius: 0.5rem;
-}
+  .slider {
+    width: 19rem;
+    height: 11rem;
+    border-radius: 0.5rem;
+  }
 
-.slider-img {
-  width: 76rem;
-}
+  .slider-img {
+    width: 76rem;
+  }
 
-.picture img {
-  width: 19rem;
-  height: 11rem;
-}
+  .picture img {
+    width: 19rem;
+    height: 11rem;
+  }
 
-.slider-footer {
-  flex-wrap: wrap;
-}
+  .slider-footer {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 
-.buttons-slider {
-  order: -1;
-  margin-left: auto;
-}
+  .buttons-slider {
+    order: -1;
+    margin-left: auto;
+  }
 
-.text {
-  font-size: 1rem;
-}
+  .text {
+    font-size: 1rem;
+  }
 
+  .button {
+    width: 2rem;
+    height: 2rem;
+  }
 
-.button {
-  width: 2rem;
-  height: 2rem;
-}
+  .button-div {
+    width: 1rem;
+    height: 1rem;
+  }
 
-.button-div {
-  width: 1rem;
-  height: 1rem;
-}
+  .cursor-effect {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 
-/* footer 320px */
+  /* footer 320px */
 
-.footer-box {
-  font-size: 1.2rem;
-}
+  .footer-box {
+    font-size: 1.2rem;
+  }
 
-.icon-rs-school {
-  display: none;
+  .icon-rs-school {
+    display: none;
+  }
 }
