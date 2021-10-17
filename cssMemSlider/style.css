@@ -30,7 +30,6 @@
 
 .main {
   background-color: black;
-
   padding-top: 5rem;
 }
 
@@ -40,7 +39,6 @@
   border-radius: 1rem;
   margin: 0 auto;
   overflow: hidden;
-
 }
 
 .slider-img {
@@ -50,7 +48,6 @@
   width: 280rem;
   margin: 0;
   padding: 0;
-
 }
 
 .picture.active {
@@ -109,6 +106,14 @@
   background-color: black;
 }
 
+.button-div.active-mouse {
+  background-color: white;
+}
+
+.button-div.active-border {
+  border: 0.5rem ridge white;
+}
+
 
 /* footer */
 
@@ -122,26 +127,6 @@
   align-items: center;
   justify-content: space-between;
 }
-
-/* cursor effect */
-
-.cursor-effect {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  background-color: chartreuse;
-  opacity: 30%;
-  position: relative;
-  /* display: none; */
-
-  ;
-}
-
-.cursor-effect.active {
-  display: block;
-}
-
-
 
 @media (max-width: 320px) {
   .wriper {

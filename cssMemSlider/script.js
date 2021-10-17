@@ -3,12 +3,10 @@ const slides = document.querySelectorAll('.picture'),
   buttons = document.querySelectorAll('.button'),
   buttonDiv = document.querySelectorAll('.button-div'),
   texts = document.querySelectorAll('.text'),
-  cursorEffect = document.querySelector('.cursor-effect'),
+
   main = document.querySelector('.main');
 
-
-
-const activeSlider = n => {
+const activeButton = n => {
 
   for (let button of buttonDiv) {
     button.classList.remove('active');
@@ -24,16 +22,31 @@ const activeSlider = n => {
 
   texts[n].classList.add('active');
   buttonDiv[n].classList.add('active');
-
   slides[n].classList.add('active');
-
 };
 
 buttons.forEach((button, i) => {
-  button.addEventListener('mouseup', e => {
-    activeSlider(i);
+  button.addEventListener('mousedown', (event) => {
+    activeButton(i);
   });
 });
-main.addEventListener('mousedown', () => {
 
+buttons.forEach((button, i) => {
+  button.addEventListener('mouseover', (event) => {
+    if (buttonDiv[i] == document.querySelector('.button-div.active')) {
+
+      buttonDiv[i].classList.add('active-border');
+    } else {
+      buttonDiv[i].classList.add('active-mouse');
+    }
+
+  });
+});
+
+buttons.forEach((button, i) => {
+  button.addEventListener('mouseout', (event) => {
+    buttonDiv[i].classList.remove('active-mouse');
+    buttonDiv[i].classList.remove('active-border');
+
+  });
 });
