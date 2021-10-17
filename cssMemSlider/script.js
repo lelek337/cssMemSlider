@@ -2,9 +2,9 @@ const slides = document.querySelectorAll('.picture'),
   slideContainer = document.querySelector('.slider'),
   buttons = document.querySelectorAll('.button'),
   buttonDiv = document.querySelectorAll('.button-div'),
-  texts = document.querySelectorAll('.text'),
+  texts = document.querySelectorAll('.text');
 
-  main = document.querySelector('.main');
+
 
 const activeButton = n => {
 
